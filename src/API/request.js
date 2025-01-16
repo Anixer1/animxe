@@ -1,4 +1,4 @@
-const baseUrl = "https://consumet-api-r8cm.onrender.com/anime/gogoanime";
+const baseUrl = "https://streaming-ecru.vercel.app/anime/gogoanime";
 
 export const makeRequest = async (endpoint, config) => {
     const url = `${baseUrl}${endpoint}`;
