@@ -4,12 +4,12 @@ import Hls from "hls.js";
 import { useEffect, useState } from "react";
 
 const Stream = ({ episodeId }) => {
-  const [Streamwish, setStreamwish] = useState("vidstreaming");
+  const [StreamwishServer, setStreamwishServer] = useState("vidstreaming");
   const [quality, setQuality] = useState("default");
   const [episode, setEpisode] = useState(null);
 
   useEffect(() => {
-    makeRequest(`/watch/${episodeId}?server=${Streamwish}`, {
+    makeRequest(`/watch/${episodeId}?server=${StreamwishServer}`, {
       cache: "no-cache",
     }).then((res) => setEpisode(res));
   }, [episodeId]);
