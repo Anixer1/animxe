@@ -4,7 +4,7 @@ import Hls from "hls.js";
 import { useEffect, useState } from "react";
 
 const Stream = ({ episodeId }) => {
-  const [currentServer, setcurrentServer] = useState("vidstreaming");
+  const [currentServer, setCurrentServer] = useState("vidstreaming");
   const [quality, setQuality] = useState("default");
   const [episode, setEpisode] = useState(null);
 
