@@ -9,7 +9,7 @@ const Stream = ({ episodeId }) => {
   const [episode, setEpisode] = useState(null);
 
   useEffect(() => {
-    makeRequest(`/watch/${episodeId}?server=${currentServer}`, {
+    makeRequest(`/watch/${episodeId}?server=${gogocdn}`, {
       cache: "no-cache",
     }).then((res) => setEpisode(res));
   }, [episodeId]);
