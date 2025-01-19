@@ -1,4 +1,4 @@
-const baseUrl = "https://streaming-ecru.vercel.app/anime/gogoanime";
+const baseUrl = "https://khdgw.vercel.app/anime/gogoanime";
 
 export const makeRequest = async (endpoint, config) => {
     const url = `${baseUrl}${endpoint}`;
