@@ -1,4 +1,4 @@
-const baseUrl = "https://khdgw.vercel.app/anime/gogoanime";
+const baseUrl = "https://khdgw.vercel.app/api/v2/hianime";
 
 export const makeRequest = async (endpoint, config) => {
     const url = `${baseUrl}${endpoint}`;
